@@ -17,7 +17,7 @@ app.use(cors());
 
 // Endpoints
 app.post('/sighting', SightingCtrl.create);
-app.get('/sighting', SightingCtrl.raed);
+app.get('/sighting', SightingCtrl.read); //read was mispelled, it has been corrected now to match property name in SightingCtrl.js
 app.put('/sighting/:id', SightingCtrl.update);
 app.delete('/sighting/:id', SightingCtrl.delete);
 
